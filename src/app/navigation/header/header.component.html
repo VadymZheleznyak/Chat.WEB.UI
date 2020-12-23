@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <!-- <div *ngIf="this.userService.userIsAuth">
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div> -->
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <li (click)="onLogout()" *ngIf="this.userService.userIsAuth">
+                <a routerLink="/"><mat-icon>exit_to_app</mat-icon>  Log out</a>
+            </li>
+        </ul>
+    </div>
+  </mat-toolbar>
+
+  <!--GRADIENT LOADER-->
+  
+  <!-- <div class="seperator gradient"></div> -->

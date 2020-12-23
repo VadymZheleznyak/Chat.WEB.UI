@@ -1,0 +1,10 @@
+mat-toolbar{
+    position: relative;
+    top: 20px;
+    justify-content: center;
+}
+
+  .item-toolbar{
+    background: rgba(255,255,255,0.8);
+    border-radius: 5px;
+  }

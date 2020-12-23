@@ -1,0 +1,301 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* for sidenav to take a whole page */
+html, body { 
+    margin: 0;
+    height: 100%;
+}
+
+html{
+    background-color: rgba(75, 159, 255, 0.25);
+    background-position-y: 100%;
+    background-position-x: 100%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, .0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fill-remaining-space{
+    flex: 1 1 auto;
+}
+
+form.normal-form{
+    margin-top: 2rem;
+}
+
+.controles-container{
+    width: 100%;
+    padding: 5%;
+    height: 100%;
+}
+
+.controles-container > *{
+    width: 100%;
+    }
+
+    .add-bottom-padding{
+        padding-bottom: 10px;
+    }
+
+mat-radio-group mat-radio-button{
+    margin-left: 5px;
+}
+
+mat-grid-list{
+    height: 100%;
+}
+
+mat-grid-tile{
+    height: 100%;
+}
+
+.button-row button{
+    margin: 5px;
+}
+
+#toast-container > div{
+    opacity: 1;
+}
+
+.btn-dialog-close{
+    width: 45px;
+    min-width: 0px;
+    height: 40px;
+    padding: 0px;
+}
+
+.search-div{
+    margin-top: 2.6rem;
+}
+
+.filter-div{
+    display: inline-block;
+}
+
+.search-form-field{
+    width: 60%;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.search-form-field div.mat-form-field-underline{
+    display: none;
+}
+
+.search-form-field div.mat-form-field-infix{
+    border-top: 0px;
+}
+
+.search-form-field div.mat-form-field-wrapper{
+    padding-bottom: 0px;
+}
+
+.search-form-field div.mat-form-field-suffix button{
+    height: 32px;
+    width: 32px;
+}
+
+.div-filter-item{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.7rem;
+    height: 3rem;
+}
+
+.date-filter mat-form-field {
+    margin: 0;
+}
+
+.filter-item{
+    margin: 0.7rem 0 0 0;
+}
+
+.filter-item .mat-form-field-infix{
+    border: 0;
+    margin: 0.2rem 0;
+}
+
+.filter-section{
+    margin-left: -0.8rem;
+    font-size: inherit;
+    background: #fff;
+}
+
+.filter-section label{
+    display: block;
+}
+
+input.form-control:focus{
+    box-shadow: none;
+}
+
+button[type=submit].btn{
+    border-radius: 20px;
+    background-color: #04c582;
+    color: #fff;
+}
+
+div.form-group label:not(.text-danger){
+    color: #545d6a;
+    font-weight: 700;
+}
+
+div.form-group.required>label:first-child:after{
+    content:'*';
+    color: #fff;
+    padding-left: 5px;
+}
+
+#toast-container > div {
+    opacity:1;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .wrapped-div {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #2e3137;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  }
+
+  /* Tabs */
+.tab-header{
+    text-align: center;
+}
+
+  .tab-header h2.active {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+  }
+
+  .tab-header h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    display:inline-block;
+    padding: 30px 40px 10px 40px;
+    cursor: pointer;
+    color: #545d6a;
+    border-bottom: 2px solid #545d6a;
+  }
+
+  .tab-header h2:focus {
+      outline: none;
+  }
+
+  form{
+      margin: 0px 16px;
+  }
+
+ div.form-group input.invalid{
+    border: 1px solid #dc3545; 
+ }
+ div.form-group label:first-child{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+ }
+
+div.mat-menu-content{
+    width: 250px;
+}
+
+button.menu-button{
+    margin: 0.5rem;
+}
+
+.date-filter mat-form-field{
+    width: 95%;
+    margin-left: 0.65rem;
+}
+
+.filter-div .filter-label{
+    margin-top: 1rem;
+}
+
+.filter-section mat-select{
+    border-radius: 0.4rem;
+    background: lavender;
+}
+
+.filter-div mat-form-field{
+    width: 100%;
+}
+
+.mat-select-panel{
+    background: rgba(245, 193, 188, 1);
+}
+
+.mat-datepicker-content{
+    background: rgba(245, 193, 188, 0.9);
+}
+
+.mat-list-item :hover{
+    background: rgba(245, 193, 188, 0.9);
+    color: black;
+}
+
+.gradient {
+    background: rgb(48,255,144); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(48,255,144,1) 0%, rgba(237,45,237,1) 25%, rgba(201,152,38,1) 50%, rgba(48,255,230,1) 75%, rgba(48,255,144,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(48,255,144,1)), color-stop(25%,rgba(237,45,237,1)), color-stop(50%,rgba(201,152,38,1)), color-stop(75%,rgba(48,255,230,1)), color-stop(100%,rgba(48,255,144,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 ); /* IE6-9 */
+  }
+
+  @-webkit-keyframes rotate {
+    from {
+      background-position: -3000px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      background-position: -3000px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+
+.seperator-wrapper {
+    width: 100%;  
+}
+
+.seperator {
+    width: 3000px;
+    height: 5px;
+    animation: rotate 3s infinite linear;
+    -webkit-animation: rotate 3s infinite linear;
+}

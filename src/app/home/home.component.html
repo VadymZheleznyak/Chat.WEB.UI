@@ -1,0 +1,55 @@
+<mat-toolbar>
+  <span class="fill-remaining-space"></span>
+  <span>Welcome to Test Chat!</span>
+  <span class="fill-remaining-space"></span>
+</mat-toolbar>
+
+<div class="card m-5" style="width: 18rem;" *ngIf="userDetails">
+  <ul class="list-group">
+    <li class="list-group-item"> <strong>User Name: </strong> {{userDetails.userName}}</li>
+    <li class="list-group-item"> <strong>Email: </strong> {{userDetails.email}}</li>
+  </ul>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <h2>Realtime Chat Application</h2>
+      <hr>
+  </div>
+  <div class="row">
+      <div class="col-sm-5">
+          <label for="roomInput">Choose room</label>
+          <mat-form-field class="col sm-8" >
+            <mat-select [(ngModel)]="room" placeholder="room">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let room of roomsArray">
+                <mat-option value="{{room.roomName}}">{{room.roomName}}</mat-option>
+            </ng-container>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <div class="col sm-2">
+          <div style="margin-top:1.9rem;" class="pull-right"> 
+              <button type="button" style="margin-right:1rem;" class="btn btn-primary" *ngIf="!userIsJoined" (click)="join()">Join</button>
+              <button type="button" style="margin-right:1rem;" class="btn btn-default" *ngIf="userIsJoined" (click)="leave()">Leave</button>
+              <button type="button" style="margin-right:1rem;" class="btn btn-primary" *ngIf="!userIsJoined" routerLink="/create-room">Create new room</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="well" style="height:200px; padding:15px;overflow: scroll;width: 104.5em;">
+          <div *ngFor="let item of messageArray">
+          <span><strong>{{item}}</strong> </span>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="messageText">            
+      </div>
+      <div class="col-sm-2">
+              <button type="button" class="btn btn-success pull-right" (click)="sendMessage()">Send</button>
+      </div>
+  </div>
+</div>

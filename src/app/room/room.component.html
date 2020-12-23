@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <span>New room</span>
+    <span class="fill-remaining-space"></span>
+  </mat-toolbar>
+    
+  <form [formGroup]="roomService.form" autocomplete="off" class="normal-form" (submit)="onSubmit()">
+    <mat-grid-list cols="2">
+        <mat-grid-tile>
+            <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="RoomName" matInput placeholder="Room Name" required>
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <div class="button-row">
+                    <button mat-raised-button color="basic" type="submit" 
+                    [disabled]="roomService.form.invalid">Submit</button>
+                    <button type="button" mat-raised-button color="warn" (click)="roomService.initializeFormGroup()">
+                        Clear
+                    </button>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+  </form>
